@@ -9,8 +9,8 @@ from selenium import webdriver
 
 import time
 # %%
-chromedriver_path = "C:/Users/wardc/Downloads/chromedriver"
-os.path.exists(chromedriver_path)
+chromedriver_path = None
+
 
 class DUMASS():
     def __init__(self,driver):
@@ -60,7 +60,7 @@ class DUMASS():
         self.submit.click()
         
     
-driver = webdriver.Chrome(chromedriver_path)
+driver = webdriver.Chrome()
                 
 driver.get("http://admin:password@routerlogin.net/WLG_wireless_dual_band_r10.htm")
         
