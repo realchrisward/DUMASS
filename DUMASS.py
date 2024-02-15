@@ -67,7 +67,7 @@ def run_dumass():
          
     s = Service('/usr/bin/chromedriver')
     driver = webdriver.Chrome(service=s, options=options)
-    driver.manage().timeouts().implicitlyWait(30)
+    driver.implicitly_wait(30)
     driver.get("http://admin:password@routerlogin.net/WLG_wireless_dual_band_r10.htm")
         
     dumass = DUMASS(driver)
