@@ -54,8 +54,8 @@ class DUMASS():
             print('ssid already off')
         self.ssid_name.clear()
         self.ssid_pass.clear()
-        self.ssid_name.send_keys('WardFi-gotobed')
-        self.ssid_pass.send_keys('gothefucktosleep')
+        self.ssid_name.send_keys('HP-printer-series-1250')
+        self.ssid_pass.send_keys('iamjustaprinter')
         self.ssid_name.send_keys(webdriver.common.keys.Keys.TAB)
         self.submit.click()
         alert = self.driver.switch_to.alert
